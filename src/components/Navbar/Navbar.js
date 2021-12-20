@@ -22,7 +22,7 @@ import Register from 'features/Auth/components/Register';
 import { logout } from 'features/Auth/userSlice';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import './navbar.css';
 
 const pages = ['Home', 'Header', 'Footer'];
@@ -35,6 +35,7 @@ const ResponsiveAppBar = () => {
 
   const loggedInUser = useSelector((state) => state.user.current);
   const dispatch = useDispatch();
+  const history = useHistory();
   const isLoggedIn = !!loggedInUser.id;
 
   const theme = useTheme();
@@ -71,6 +72,7 @@ const ResponsiveAppBar = () => {
     dispatch(action);
     setAnchorElNav(null);
     setAnchorElUser(null);
+    history.push('/home');
   };
 
   return (
@@ -219,15 +221,14 @@ const ResponsiveAppBar = () => {
       </AppBar>
       {/* <<<<<<<<<<<<<<<<<<<****DIALOG****>>>>>>>>>>>>>>>>>>> */}
       <Dialog
-        onBackdropClick
         disableEscapeKeyDown
         fullScreen={fullScreen}
         open={open}
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <IconButton style={{ position: 'absolute', top: '0', right: '0' }}>
-          <Close onClick={handleClose} />
+        <IconButton style={{ position: 'absolute', top: '0', right: '0' }} onClick={handleClose}>
+          <Close />
         </IconButton>
         <DialogContent>
           {mode === MODE.REGISTER && (

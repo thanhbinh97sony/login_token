@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useSelector, useDispatch } from 'react-redux';
-import { increase, decrease } from '../Counter/counterSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { decrease, increase } from '../Counter/counterSlice';
 
 CounterFeature.propTypes = {};
 
