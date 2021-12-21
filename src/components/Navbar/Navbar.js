@@ -86,7 +86,7 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img src="/logo192.png" alt="hinh logo" style={{ width: '50px' }} />
+              <img src="logo192.png" alt="hinh logo" style={{ width: '50px' }} />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

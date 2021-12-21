@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import productApi from 'api/productApi';
 import React, { useEffect, useState } from 'react';
+import FiltersViewer from '../components/FiltersViewer';
 import ProductFilters from '../components/ProductFilters';
 import ProductList from '../components/ProductList';
 import ProductSkeletonList from '../components/ProductSkeletonList';
@@ -62,6 +63,10 @@ function ListPage(props) {
     }));
   };
 
+  const setNewFilters = (setNewFilters) => {
+    setFilters(setNewFilters);
+  };
+
   return (
     <>
       <Box>
@@ -69,15 +74,16 @@ function ListPage(props) {
           <Grid container spacing={1} className="grid">
             <Grid item className="grid-left">
               <Paper elevation={0} className="grid-left-paper">
-                  <ProductFilters
-                    filters={filters}
-                    onChange={handleFiltersChange}
-                  />
+                <ProductFilters filters={filters} onChange={handleFiltersChange} />
               </Paper>
             </Grid>
             <Grid item className="grid-right">
               <Paper elevation={0}>
                 <ProductSort currentSort={filters._sort} onChange={handleSortPage} />
+                <FiltersViewer
+                  filters={filters}
+                  onChange={setNewFilters}
+                ></FiltersViewer>
                 {loading ? <ProductSkeletonList /> : <ProductList data={productList} />}
                 <Pagination
                   count={Math.ceil(pagination.total / pagination.limit)}

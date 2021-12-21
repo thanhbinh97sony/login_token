@@ -49,3 +49,12 @@
 .filterByService-list ul li {
     list-style-type: none;
 }
+
+.filtersViewer-box {
+    display: flex;
+}
+
+.filtersViewer-box li {
+    list-style-type: none;
+    padding: 0 10px;
+}
