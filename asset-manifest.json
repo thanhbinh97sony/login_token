@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/thanhbinh97sony/login_token/static/css/main.56bdef8e.chunk.css",
-    "main.js": "/thanhbinh97sony/login_token/static/js/main.8215e1e5.chunk.js",
-    "main.js.map": "/thanhbinh97sony/login_token/static/js/main.8215e1e5.chunk.js.map",
-    "runtime-main.js": "/thanhbinh97sony/login_token/static/js/runtime-main.15e08caa.js",
-    "runtime-main.js.map": "/thanhbinh97sony/login_token/static/js/runtime-main.15e08caa.js.map",
-    "static/js/2.24287a32.chunk.js": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js",
-    "static/js/2.24287a32.chunk.js.map": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js.map",
-    "static/js/3.7a590c00.chunk.js": "/thanhbinh97sony/login_token/static/js/3.7a590c00.chunk.js",
-    "static/js/3.7a590c00.chunk.js.map": "/thanhbinh97sony/login_token/static/js/3.7a590c00.chunk.js.map",
-    "index.html": "/thanhbinh97sony/login_token/index.html",
-    "static/css/main.56bdef8e.chunk.css.map": "/thanhbinh97sony/login_token/static/css/main.56bdef8e.chunk.css.map",
-    "static/js/2.24287a32.chunk.js.LICENSE.txt": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js.LICENSE.txt"
+    "main.css": "/login_token/static/css/main.c2d4e6f3.chunk.css",
+    "main.js": "/login_token/static/js/main.3a60595c.chunk.js",
+    "main.js.map": "/login_token/static/js/main.3a60595c.chunk.js.map",
+    "runtime-main.js": "/login_token/static/js/runtime-main.5963a108.js",
+    "runtime-main.js.map": "/login_token/static/js/runtime-main.5963a108.js.map",
+    "static/js/2.8f9d1bb8.chunk.js": "/login_token/static/js/2.8f9d1bb8.chunk.js",
+    "static/js/2.8f9d1bb8.chunk.js.map": "/login_token/static/js/2.8f9d1bb8.chunk.js.map",
+    "static/js/3.1050345b.chunk.js": "/login_token/static/js/3.1050345b.chunk.js",
+    "static/js/3.1050345b.chunk.js.map": "/login_token/static/js/3.1050345b.chunk.js.map",
+    "index.html": "/login_token/index.html",
+    "static/css/main.c2d4e6f3.chunk.css.map": "/login_token/static/css/main.c2d4e6f3.chunk.css.map",
+    "static/js/2.8f9d1bb8.chunk.js.LICENSE.txt": "/login_token/static/js/2.8f9d1bb8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.15e08caa.js",
-    "static/js/2.24287a32.chunk.js",
-    "static/css/main.56bdef8e.chunk.css",
-    "static/js/main.8215e1e5.chunk.js"
+    "static/js/runtime-main.5963a108.js",
+    "static/js/2.8f9d1bb8.chunk.js",
+    "static/css/main.c2d4e6f3.chunk.css",
+    "static/js/main.3a60595c.chunk.js"
   ]
 }
