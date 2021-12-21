@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/thanhbinh97sony/login_token/static/css/main.56bdef8e.chunk.css",
+    "main.js": "/thanhbinh97sony/login_token/static/js/main.8215e1e5.chunk.js",
+    "main.js.map": "/thanhbinh97sony/login_token/static/js/main.8215e1e5.chunk.js.map",
+    "runtime-main.js": "/thanhbinh97sony/login_token/static/js/runtime-main.15e08caa.js",
+    "runtime-main.js.map": "/thanhbinh97sony/login_token/static/js/runtime-main.15e08caa.js.map",
+    "static/js/2.24287a32.chunk.js": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js",
+    "static/js/2.24287a32.chunk.js.map": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js.map",
+    "static/js/3.7a590c00.chunk.js": "/thanhbinh97sony/login_token/static/js/3.7a590c00.chunk.js",
+    "static/js/3.7a590c00.chunk.js.map": "/thanhbinh97sony/login_token/static/js/3.7a590c00.chunk.js.map",
+    "index.html": "/thanhbinh97sony/login_token/index.html",
+    "static/css/main.56bdef8e.chunk.css.map": "/thanhbinh97sony/login_token/static/css/main.56bdef8e.chunk.css.map",
+    "static/js/2.24287a32.chunk.js.LICENSE.txt": "/thanhbinh97sony/login_token/static/js/2.24287a32.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15e08caa.js",
+    "static/js/2.24287a32.chunk.js",
+    "static/css/main.56bdef8e.chunk.css",
+    "static/js/main.8215e1e5.chunk.js"
+  ]
+}
