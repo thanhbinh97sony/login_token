@@ -1,0 +1,24 @@
+.filterCategory-box {
+    padding: 20px;
+}
+
+.filterCategory-box ul li {
+    list-style-type: none;
+    margin-top: 8px;
+    transition: all 0.25s;
+}
+
+.filterCategory-box ul li:hover {
+    cursor: pointer;
+    color: burlywood;
+}
+
+.filterCategory-box ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filterCategory-typography {
+    text-align: left;
+    font-weight: bold !important;
+}

@@ -2,6 +2,10 @@
     width: 250px;
 }
 
+.grid-left-paper {
+    min-height: 242px;
+}
+
 .grid-right {
     flex: 1 1 0;
 }
