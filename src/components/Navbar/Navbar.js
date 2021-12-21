@@ -25,7 +25,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
 import './navbar.css';
 
-const pages = ['Home', 'Header', 'Footer'];
+const pages = ['Home', 'Header', 'Footer','Products'];
 const settings = ['Profile', 'Account', 'Dashboard'];
 const MODE = { LOGIN: 'login', REGISTER: 'register' };
 
