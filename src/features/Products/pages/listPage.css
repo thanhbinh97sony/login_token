@@ -15,3 +15,39 @@
     justify-content: center;
     padding: 15px 0 20px 0;
 }
+
+.detail-grid-left-paper {
+    max-width: 270px;
+}
+
+.detail-grid-left-paper,
+.detail-grid-right-paper {
+    padding: 10px;
+    min-height: 300px;
+}
+
+.detail-grid-right {
+    flex: 1 1 0;
+}
+
+.price-box {
+    background-color: rgb(194, 181, 181);
+}
+
+.salePrice-box {
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.originalPrice-box {
+    margin-right: 20px;
+    text-decoration: line-through;
+}
+
+.linearProgress {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+}

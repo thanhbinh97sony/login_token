@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import './filterByPrice.css';
+import FilterSkeletonPrice from './FilterSkeletonPrice';
 
 FilterByPrice.propTypes = {
   onChange: PropTypes.func,
@@ -25,37 +26,51 @@ function FilterByPrice({ onChange }) {
     if (onChange) onChange(values);
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(!loading);
+    }, 1000);
+  }, []);
+
   return (
-    <Box className="filterByPrice-box">
-      <Typography variant="subtitle1" align="left" className="filterByPrice-typography">
-        Gia
-      </Typography>
-      <Box className="filterByPrice-box-item">
-        <TextField
-          className="filterByPrice-textField"
-          variant="standard"
-          name="salePrice_gte"
-          value={values.salePrice_gte}
-          onChange={handleOnChange}
-        />
-        <span> - </span>
-        <TextField
-          className="filterByPrice-textField"
-          variant="standard"
-          name="salePrice_lte"
-          value={values.salePrice_lte}
-          onChange={handleOnChange}
-        />
-      </Box>
-      <Button
-        variant="outlined"
-        color="primary"
-        className="filterByPrice-btn"
-        onClick={handleSubmit}
-      >
-        Ap dung
-      </Button>
-    </Box>
+    <>
+      {loading ? (
+        <FilterSkeletonPrice />
+      ) : (
+        <Box className="filterByPrice-box">
+          <Typography variant="subtitle1" align="left" className="filterByPrice-typography">
+            Gia
+          </Typography>
+          <Box className="filterByPrice-box-item">
+            <TextField
+              className="filterByPrice-textField"
+              variant="standard"
+              name="salePrice_gte"
+              value={values.salePrice_gte}
+              onChange={handleOnChange}
+            />
+            <span> - </span>
+            <TextField
+              className="filterByPrice-textField"
+              variant="standard"
+              name="salePrice_lte"
+              value={values.salePrice_lte}
+              onChange={handleOnChange}
+            />
+          </Box>
+          <Button
+            variant="outlined"
+            color="primary"
+            className="filterByPrice-btn"
+            onClick={handleSubmit}
+          >
+            Ap dung
+          </Button>
+        </Box>
+      )}
+    </>
   );
 }
 

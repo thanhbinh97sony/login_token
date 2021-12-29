@@ -21,6 +21,10 @@ const productApi = {
       },
     };
   },
+   get(productId) {
+    const url =`products/${productId}`;
+    return axiosClient.get(url);
+  },
 };
 
 export default productApi;

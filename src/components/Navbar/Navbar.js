@@ -25,7 +25,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
 import './navbar.css';
 
-const pages = ['Home', 'Header', 'Footer','Products'];
+const pages = ['Home', 'Header', 'Footer', 'Products'];
 const settings = ['Profile', 'Account', 'Dashboard'];
 const MODE = { LOGIN: 'login', REGISTER: 'register' };
 
@@ -86,7 +86,7 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img src="logo192.png" alt="hinh logo" style={{ width: '50px' }} />
+              <img src="./logo192.png" alt="hinh logo" style={{ width: '50px' }} />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -131,13 +131,13 @@ const ResponsiveAppBar = () => {
                   </NavLink>
                 ))}
                 {!isLoggedIn && (
-                  <NavLink className="navlink" activeClassName="active" to="/form">
+                 
                     <MenuItem onClick={handleCloseNavMenu}>
                       <Typography textAlign="center" onClick={handleClickOpen}>
                         Login
                       </Typography>
                     </MenuItem>
-                  </NavLink>
+                 
                 )}
               </Menu>
             </Box>
@@ -166,10 +166,9 @@ const ResponsiveAppBar = () => {
                 </NavLink>
               ))}
               {!isLoggedIn && (
-                <NavLink
+                <Box
                   className="navlink"
                   activeClassName="active"
-                  to="/form"
                   style={{ position: 'absolute', right: '0', top: '0' }}
                 >
                   <Button
@@ -178,13 +177,13 @@ const ResponsiveAppBar = () => {
                   >
                     Login
                   </Button>
-                </NavLink>
+                </Box>
               )}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
               {isLoggedIn && (
-                <Tooltip title="Open settings">
+                <Tooltip title="Open settings" style={{marginRight:'15px'}}>
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                   </IconButton>

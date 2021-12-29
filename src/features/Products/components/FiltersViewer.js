@@ -59,19 +59,18 @@ const FILTER_LIST = [
     id: 4,
     getLabel: (filters) => {
       switch (filters['category.id']) {
-        case 1:
+        case '1':
           return 'Thời trang';
-        case 2:
+        case '2':
           return 'Khẩu trang';
-        case 3:
+        case '3':
           return 'Làm đẹp';
-        case 4:
+        case '4':
           return 'Laptop';
-        case 5:
+        case '5':
           return 'Ổ cứng';
-        case 6:
+        case '6':
           return 'Điện thoại';
-
         default:
           break;
       }
@@ -94,6 +93,7 @@ function FiltersViewer({ filters = {}, onChange = null }) {
   const visiableFilters = useMemo(() => {
     return FILTER_LIST.filter((x) => x.isVisible(filters));
   }, [filters]);
+
   return (
     <Box component="ul" className="filtersViewer-box">
       {visiableFilters.map((x) => (
